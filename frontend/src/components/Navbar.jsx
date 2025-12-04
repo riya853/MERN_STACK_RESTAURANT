@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { data } from "../restApi.json";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";   // <-- ADD THIS
 import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -22,7 +23,10 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
-          <button className="menuBtn">OUR MENU</button>
+         {/* FIXED MENU BUTTON */}
+          <RouterLink to="/menu">
+            <button className="menuBtn">OUR MENU</button>
+          </RouterLink>
         </div>
         <div className="hamburger" onClick={()=> setShow(!show)}>
                 <GiHamburgerMenu/>

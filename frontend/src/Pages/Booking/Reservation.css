@@ -1,0 +1,61 @@
+.reservation-container {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  background: #fafafa;
+}
+
+.reservation-card {
+  width: 420px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.reservation-card h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #dcdcdc;
+  font-size: 15px;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+.reserve-btn {
+  width: 100%;
+  padding: 14px;
+  background: black;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  margin-top: 10px;
+}
+
+.reserve-btn:hover {
+  opacity: 0.85;
+}
